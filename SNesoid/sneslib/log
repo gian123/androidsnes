@@ -1,0 +1,52 @@
+make: Entering directory `/home/yong/src/android'
+build/core/product_config.mk:261: WARNING: adding test OTA key
+============================================
+TARGET_PRODUCT=generic
+TARGET_BUILD_VARIANT=eng
+TARGET_SIMULATOR=
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+HOST_ARCH=x86
+HOST_OS=linux
+HOST_BUILD_TYPE=release
+BUILD_ID=
+============================================
+target SharedLib: libsnes (out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/LINKED/libsnes.so)
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/memmap.o: In function `CMemory::CheckForIPSPatch(char const*, unsigned char, int&)':
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:2606: undefined reference to `S9xGetFilename'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/memmap.o: In function `CMemory::InitROM(unsigned char)':
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:803: undefined reference to `S9xLoadSDD1Data'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/memmap.o: In function `CMemory::LoadROM(char const*)':
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:343: undefined reference to `_splitpath(char const*, char*, char*, char*, char*)'
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:344: undefined reference to `_makepath(char*, char const*, char const*, char const*, char const*)'
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:420: undefined reference to `_makepath(char*, char const*, char const*, char const*, char const*)'
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:403: undefined reference to `_makepath(char*, char const*, char const*, char const*, char const*)'
+/home/yong/src/android/packages/apps/SNesoid/jni/memmap.cpp:660: undefined reference to `S9xGetFilename'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/sdd1.o: In function `S9xSDD1LoadLoggedData()':
+/home/yong/src/android/packages/apps/SNesoid/jni/sdd1.cpp:122: undefined reference to `S9xGetFilename'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/sdd1.o: In function `S9xSDD1SaveLoggedData()':
+/home/yong/src/android/packages/apps/SNesoid/jni/sdd1.cpp:105: undefined reference to `S9xGetFilename'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `UnfreezeBlock(char*, unsigned char*, int)':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:925: undefined reference to `statef_read'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `FreezeBlock':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:806: undefined reference to `statef_write'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `Unfreeze':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:570: undefined reference to `S9xBasename'
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:570: undefined reference to `S9xBasename'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `S9xSetPCBase':
+/home/yong/src/android/packages/apps/SNesoid/jni/getset.h:655: undefined reference to `statef_open'
+/home/yong/src/android/packages/apps/SNesoid/jni/getset.h:655: undefined reference to `statef_read'
+/home/yong/src/android/packages/apps/SNesoid/jni/getset.h:655: undefined reference to `statef_close'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `FreezeStruct(char*, void*, FreezeData*, int)':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:798: undefined reference to `statef_write'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `Freeze':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:537: undefined reference to `statef_write'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `S9xFreezeGame':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:434: undefined reference to `statef_open'
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:434: undefined reference to `statef_close'
+out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/snapshot.o: In function `Snapshot':
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:423: undefined reference to `statef_open'
+/home/yong/src/android/packages/apps/SNesoid/jni/snapshot.cpp:423: undefined reference to `statef_close'
+collect2: ld returned 1 exit status
+make: *** [out/target/product/generic/obj/SHARED_LIBRARIES/libsnes_intermediates/LINKED/libsnes.so] Error 1
+make: Leaving directory `/home/yong/src/android'
